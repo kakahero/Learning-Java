@@ -19,7 +19,7 @@ public class AtomicReferenceTest {
 //					if(NomalString.equals("abc")){
 //						System.out.println("I'm thread:" + num + " I get object lock!");
 //					}
-					if(ATOMIC_REFERENCE.compareAndSet("abc", new String("abc"))){
+					if(ATOMIC_REFERENCE.compareAndSet("abc", new String("dc"))){
 						System.out.println("I'm thread:" + num + " I get object lock!");
 					}
 				}

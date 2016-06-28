@@ -19,10 +19,10 @@ public class AtomicIntegerTest {
 						e.printStackTrace();
 					}					
 					// safe
-					// int now = test_atomicInt.incrementAndGet();
+					int now = test_atomicInt.incrementAndGet();
 					// unsafe
-					test_normalInt += 1;
-					int now = test_normalInt;
+//					test_normalInt += 1;
+//					int now = test_normalInt;
 					System.out.println("I'm thread: " + num + " I got value, and add it to: " + now);
 				}
 			};
