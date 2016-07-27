@@ -14,6 +14,12 @@ public class TestRxJava3 {
 				long threadId = Thread.currentThread().getId();
 				System.out.println("call thread id: " + threadId);
 				subscriber.onNext(100);
+				subscriber.onNext(101);
+				subscriber.onNext(102);
+				subscriber.onNext(103);
+				subscriber.onNext(104);
+				subscriber.onNext(105);
+				subscriber.onNext(106);
 				subscriber.onCompleted();
 			}
 			
@@ -36,7 +42,7 @@ public class TestRxJava3 {
 			@Override
 			public void onNext(Integer i) {
 				long threadId = Thread.currentThread().getId();
-				System.out.println("onNext thread id: " + threadId);
+				System.out.println("onNext: "  + i + " thread id: " + threadId);
 			}
 		});
 	}

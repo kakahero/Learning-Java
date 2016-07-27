@@ -4,8 +4,8 @@ public class Test {
 
 	@org.junit.Test
 	public void test() {
-		for(int i=0; i<1000000000; i++){
-			SingletonTest8.getInstance();
+		for(int i=0; i<20; i++){
+			SingletonTest6.getInstance();
 		}		
 	}
 
